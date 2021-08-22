@@ -77,6 +77,6 @@ section {
   bottom: 0;
   height: 85%;
   width: 100%;
-  background-color: #3000db;
+  background-color: blue;
   z-index: -1;
 }
