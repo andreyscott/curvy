@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: "Besley", serif;
+  color: white;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.blue {
+  background: blue;
+}
+
+.grey {
+  background: grey;
+}
+
+.red {
+  background: red;
+}
+
+.pink {
+  background: pink;
+}
+
+.green {
+  background: green;
+}
+
+.black {
+  background: black;
+}
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  height: 100%;
+  width: 55%;
+  background-color: #1a1a1a;
+  transform: translate(85%, 60%);
+}
+
+.curve::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 55%;
+  border-radius: 100% 50%;
+  background-color: blue;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
+.bubble::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: #3000db;
+  z-index: -1;
+}
